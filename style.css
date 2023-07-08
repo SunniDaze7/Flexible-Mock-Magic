@@ -4,17 +4,29 @@
     font-size: 20px
 }
 .navbar {
-    width: 100vw;
+    display: flex;
+    width: 100%;
     background-color: #59D9A1;
-    padding-left: 30px;
-    padding-right: 10px;
+    justify-content: space-between;
 }
-  
+
+.main-content{
+    display: flex;
+    flex-direction: column;
+}
+
+.sub-main1, .sub-main2, .sub-main3{
+    display: flex;
+}
+
 .logo {
     display: inline-block;
+    height: 50px;
+    width: 100px;
 }
   
 .nav-links {
+    display: flex;
     list-style: none;
 }
   
@@ -39,14 +51,19 @@
 }
   
 .logo img {
-    width: 15%;
+    width: 80%;
     vertical-align: middle;
 }
 
 .sidebar {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
     background-color: #242457;
     color: white;
-    padding: 3rem;
+    padding: 1rem;
+    width: 780px;
+    align-items: center;
 }
 
 footer img {
@@ -54,6 +71,7 @@ footer img {
 }
 
 .flex-main {
+    display: flex;
     background-color: #F5F5F5;
     width: 100%;
     padding-right: 2.5rem;
@@ -63,7 +81,7 @@ footer img {
     height: 30vh;
     width: 20vw;
     background-color: #505FF9;
-    margin: 2rem;
+    margin: 1rem;
     color: #fff;
     border: solid black 1px;
     display: flex;
@@ -72,9 +90,11 @@ footer img {
 }
 
 footer {
+    display: flex;
     width: 100%;
     padding: 1rem;
     background-color: #59D9A1;
+    justify-content: space-around;
 }
 
 /* CODE YOUR FLEXBOXES HERE */
